@@ -1,15 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='bg-red-400 text-xl'>
-        dad
+      <div className='flex items-center justify-center flex-col text-xl'>
+        <AddTodo/>
+        <Todos/>
       </div>
     </>
   )
